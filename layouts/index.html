@@ -1,0 +1,31 @@
+{{ partial "head" . }}
+<body>
+<div id="wrap">
+    {{ partial "header" . }}
+    <section id="about">
+        <div class="container">
+            <div class="avatar">
+                <img class="img-circle"
+                     src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}"
+                     alt="Responsive image">
+            </div>
+            <h3>I'm <strong>Abhinav Kotak</strong>, a Freelance Full Stack Developer and Consultant.</h3>
+            <h3>
+                Curious about what I do in my free time? Check out some glimpse in my
+                <a href="{{ .Site.BaseURL }}blog/">blog</a>.</h3>
+            </h3>
+
+            <h3>
+                For more, check out my academic &amp; professional
+                {{ $resumeMenu :=  where .Site.Menus.main ".Identifier" "resume" }}
+                <a href="{{(index $resumeMenu 0).URL}}" target="_blank">resume</a>.
+            </h3>
+
+            {{ partial "social.html" . }}
+
+        </div>
+    </section>
+</div>
+{{ partial "footer" . }}
+</body>
+</html>
