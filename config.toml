@@ -1,3 +1,38 @@
-baseURL = "https://abhi9.in/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://abhi9.in/"
+languageCode = "en-US"
+title = "Abhinav Kotak"
+# Enable comments by entering your Disqus shortname
+disqusShortname = ""
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-sustain"
+
+[permalinks]
+  post = "/:year/:month/:day/:slug"
+
+[params]
+  avatar = "profile.jpeg"
+  author = "Abhinav"
+  description = "Describe your website"
+
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
+
+[params.social]
+  Github        = "inabhi9"
+  Email         = "in.abhi9@gmail.com"
+  Twitter       = "inabhi9"
+  LinkedIn      = "inabhi9"
+
+# Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "https://abhi9.page.link/resume"
