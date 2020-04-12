@@ -1,0 +1,45 @@
+baseURL = "https://abhi9.in/blog"
+title = "Abhinav's Blog"
+author = "Abhinav"
+theme = "inkblotty"
+paginate = 10
+
+languageCode = "en-us"
+DefaultContentLanguage = "en-us"
+hasCJKLanguage = "true"
+
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+disqusShortname = ""
+googleAnalytics = ""
+
+summaryLength=150
+
+[permalinks]
+  post = "/:slug/"
+  page = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "https://abhi9.in"
+  weight = 10
+
+[Params]
+  readmore = true
+
+[outputs]                          # c.f. https://gohugo.io/templates/output-formats/
+  home = ["HTML", "RSS"]
+  page =  ["HTML"]
+  section =  ["HTML", "RSS"]
+  taxonomyTerm =  ["HTML", "RSS"]
+  taxonomy =  ["HTML", "RSS"]
+
+[sitemap]
+  filename = "sitemap.xml"  # c.f. https://gohugo.io/templates/sitemap-template/#configure-sitemap-xml
