@@ -1,38 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://abhi9.in/blog/</loc>
     <lastmod>2020-02-01T14:48:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://abhi9.in/blog/tags/aws/</loc>
     <lastmod>2020-02-01T14:48:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://abhi9.in/blog/mssql-rds-backup-to-s3/</loc>
+    <loc>https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/</loc>
     <lastmod>2020-02-01T14:48:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://abhi9.in/blog/post/</loc>
     <lastmod>2020-02-01T14:48:18+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://abhi9.in/blog/tags/</loc>
     <lastmod>2020-02-01T14:48:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://abhi9.in/blog/archives/</loc>
-  </url>
-  
-  <url>
-    <loc>https://abhi9.in/blog/tags/index/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

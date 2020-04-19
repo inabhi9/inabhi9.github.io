@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Abhinav&#39;s Blog</title>
+        MSSQL RDS Backup to S3 - Abhinav&#39;s Blog
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,25 +23,40 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &amp;lsquo;ACTIVE_BACKUP_OR_RESTORE&amp;rsquo;.  Switch recovery mode to simple before triggering the backup
+alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
+alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances" />
   <meta name="generator" content="Hugo 0.68.3 with theme pure" />
-  <title>Abhinav&#39;s Blog</title>
+  <title>MSSQL RDS Backup to S3 - Abhinav&#39;s Blog</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://abhi9.in/blog/index.xml" title="Abhinav's Blog" />
   
   <link rel="stylesheet" href="https://abhi9.in/blog/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Abhinav&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://abhi9.in/blog/" />
-<meta property="og:updated_time" content="2020-02-01T14:48:18+00:00" />
-<meta itemprop="name" content="Abhinav&#39;s Blog">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Abhinav&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
+  <meta property="og:title" content="MSSQL RDS Backup to S3" />
+<meta property="og:description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
+alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
+alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/" />
+<meta property="article:published_time" content="2020-02-01T14:48:18+00:00" />
+<meta property="article:modified_time" content="2020-02-01T14:48:18+00:00" />
+<meta itemprop="name" content="MSSQL RDS Backup to S3">
+<meta itemprop="description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
+alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
+alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances">
+<meta itemprop="datePublished" content="2020-02-01T14:48:18&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-01T14:48:18&#43;00:00" />
+<meta itemprop="wordCount" content="62">
+
+
+
+<meta itemprop="keywords" content="aws," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MSSQL RDS Backup to S3"/>
+<meta name="twitter:description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
+alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
+alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -179,20 +195,20 @@
 
     
     
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
 
-<main class="main" role="main">
-  
-  <div class="content article-list">
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
     
-    
-    
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
+    <div class="article-header">
+      <h1 itemprop="name">
   <a
     class="article-title"
     href="/blog/post/de334129d2114a65ad3c636a71cfdb31/"
@@ -200,16 +216,11 @@
   >
 </h1>
 
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
-alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
-alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances
-      </div>
-      <p class="article-meta">
+      <div class="article-meta">
+        
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/" class="">
+<a href="https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/" class="article-date">
   <time datetime="2020-02-01 14:48:18.871 &#43;0000 UTC" itemprop="datePublished">2020-02-01</time>
 </a>
 </span>
@@ -219,20 +230,50 @@ alter database TestimonialTree set recovery full  Ref: Perform Native Backups of
     <a class="article-tag-link" href="/blog/tags/aws/"> aws </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/blog/post/de334129d2114a65ad3c636a71cfdb31/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/blog/post/de334129d2114a65ad3c636a71cfdb31/#comments"
+            class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 62words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
-      </p>
-    </article></div>
-  
-<nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-    <ul class="pager pull-left">
-    </ul>
-    <div class="total-article bar-right">
-      Page:1/1
+      </div>
     </div>
-  </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <ul>
+<li>Create an <a href="https://console.aws.amazon.com/rds/home?region=us-east-1#option-groups:">Option groups</a> with <code>SQLSERVER_BACKUP_RESTORE</code> option</li>
+</ul>
+<p><img src="/j-resources/f3bd45eee0f6448ebd966f4d2b743014" alt="9eb1549cb7181dcdb0a6f97b3740c513.png"></p>
+<ul>
+<li>Assign the group to RDS instance</li>
+</ul>
+<p><img src="/j-resources/f4c4927f6723480aa3e7fd90435240b7" alt="f14f1d1626b653cc1a5a8d085d9b198d.png"></p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.</strong></li>
+</ul>
+<p>Switch recovery mode to simple before triggering the backup</p>
+<pre><code>alter database TestimonialTree set recovery simple
+</code></pre>
+<p>After successful backup, switch back recovery to full</p>
+<pre><code>alter database TestimonialTree set recovery full
+</code></pre>
+<p>Ref: <a href="https://aws.amazon.com/premiumsupport/knowledge-center/native-backup-rds-sql-server/">Perform Native Backups of SQL Server DB Instances</a></p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <div class="bar-right">
+            <div class="share-component" data-sites="facebook,twitter,linkedin"
+                data-mobile-sites="facebook,twitter,linkedin"></div>
+        </div>
+    </div>
 </nav>
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -308,6 +349,19 @@ alter database TestimonialTree set recovery full  Ref: Perform Native Backups of
         
         hasInnerContainers: true,
     });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/abhi9.in\/blog\/post\/de334129d2114a65ad3c636a71cfdb31\/';
+        this.page.identifier = 'inabhi9';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'inabhi9' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 
   </body>

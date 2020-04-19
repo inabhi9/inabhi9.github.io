@@ -1,32 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Abhinav&#39;s Blog</title>
     <link>https://abhi9.in/blog/tags/</link>
     <description>Recent content in Tags on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Sat, 01 Feb 2020 14:48:18 +0000</lastBuildDate>
     
-	<atom:link href="https://abhi9.in/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://abhi9.in/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>aws</title>
-      <link>https://abhi9.in/blog/tags/aws/</link>
+      <title>MSSQL RDS Backup to S3</title>
+      <link>https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/</link>
       <pubDate>Sat, 01 Feb 2020 14:48:18 +0000</pubDate>
       
-      <guid>https://abhi9.in/blog/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>index</title>
-      <link>https://abhi9.in/blog/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://abhi9.in/blog/tags/index/</guid>
-      <description></description>
+      <guid>https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/</guid>
+      <description>Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &amp;lsquo;ACTIVE_BACKUP_OR_RESTORE&amp;rsquo;.  Switch recovery mode to simple before triggering the backup
+alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
+alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances</description>
     </item>
     
   </channel>
