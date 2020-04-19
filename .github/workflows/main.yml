@@ -32,7 +32,7 @@ jobs:
 
       - name: Install python deps
         run: |
-          apt-get install --reinstall python-setuptools
+          sudo apt-get install --reinstall python-setuptools
           cd blog
           pip3 install -r requirements.txt
 
