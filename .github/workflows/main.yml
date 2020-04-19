@@ -29,6 +29,23 @@ jobs:
           ref: 'blog'
           submodules: true
           path: blog
+
+      - name: Install python deps
+        run: |
+          cd blog
+          pip3 install -r requirements.txt
+
+      - name: Pull blog content
+        env:
+          GD_SERVICE_ACC_INFO: ${{ secrets.GD_SERVICE_ACC_INFO }}
+          GD_FOLDER_ID: ${{ secrets.GD_FOLDER_ID }}
+        run: |
+          cd $GITHUB_WORKSPACE/blog/content/post
+          find . -type f -not -name '_index.md' -delete
+          rm -fr $GITHUB_WORKSPACE/blog/static/j-resources
+          joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/post
+          mv /tmp/posts/.resource $GITHUB_WORKSPACE/blog/static/j-resources
+
           
       - name: Checkout master to /public
         run: |
