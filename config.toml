@@ -3,6 +3,7 @@ title = "Abhinav's Blog"
 author = "Abhinav"
 theme = "inkblotty"
 paginate = 10
+canonifyURLs = true
 
 languageCode = "en-us"
 DefaultContentLanguage = "en-us"
@@ -22,7 +23,6 @@ summaryLength=150
 
 [taxonomies]
   tag = "tags"
-  category = "categories"
   archive = "archives"
 
 [[menu.main]]
