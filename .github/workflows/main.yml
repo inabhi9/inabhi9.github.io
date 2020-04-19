@@ -44,7 +44,7 @@ jobs:
           cd $GITHUB_WORKSPACE/blog/content/post
           find . -type f -not -name '_index.md' -delete
           rm -fr $GITHUB_WORKSPACE/blog/static/j-resources
-          $GITHUB_WORKSPACE/blog/joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/post
+          python3 $GITHUB_WORKSPACE/blog/joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/post
           mv /tmp/posts/.resource $GITHUB_WORKSPACE/blog/static/j-resources
 
           
