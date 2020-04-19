@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Build www
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -8,9 +8,6 @@ on:
   push:
     branches:
       - www
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '0 */6 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,47 +18,17 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: '3.7'
-
-      # You can test your matrix by printing the current Python version
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
-
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
           ref: 'www'
           path: www
           submodules: true
-          
-      - uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          ref: 'blog'
-          submodules: true
-          path: blog
-
-      - name: Install python deps
-        run: |
-          cd blog
-          pip install -r requirements.txt
-
-      - name: Pull blog content
-        env:
-          GD_SERVICE_ACC_INFO: ${{ secrets.GD_SERVICE_ACC_INFO }}
-          GD_FOLDER_ID: ${{ secrets.GD_FOLDER_ID }}
-        run: |
-          cd $GITHUB_WORKSPACE/blog/content/post
-          ls
-          find . -type f -not -name '_index.md' -delete
-          rm -fr $GITHUB_WORKSPACE/blog/static/j-resources
-          python $GITHUB_WORKSPACE/blog/joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/post
-          ls $GITHUB_WORKSPACE/blog/content/post
-          mv /tmp/posts/.resource $GITHUB_WORKSPACE/blog/static/j-resources
-          ls $GITHUB_WORKSPACE/blog/static
-
+          hugo-version: '0.68.3'
 
       - name: Checkout master to /public
         run: |
@@ -69,27 +36,19 @@ jobs:
           rm -fr public
           git fetch --no-tags --depth=1 origin +refs/heads/*:refs/remotes/origin/*
           git worktree add -B master public origin/master
-      
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.68.3'
-      
+
       - name: Build www
-        run:
-          cd www && hugo
-      
-      - name: Build blog
-        run:
-          cd blog && hugo -d $GITHUB_WORKSPACE/www/public/blog
-      
+        run: |
+          cd www
+          hugo
+
       - name: Preparing publishing
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           cd $GITHUB_WORKSPACE/www/public
           git add --all
-          git diff-index --quiet HEAD || git commit -m "Publishing to master"
+          git diff-index --quiet HEAD || git commit -m "Published www"
           
       - name: action-push
         uses: ad-m/github-push-action@master
