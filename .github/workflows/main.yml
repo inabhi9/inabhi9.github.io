@@ -61,7 +61,7 @@ jobs:
           ls $GITHUB_WORKSPACE/blog/static
 
       - name: Build blog
-        run:
+        run: |
           cd blog
           hugo -d $GITHUB_WORKSPACE/public/blog
       
