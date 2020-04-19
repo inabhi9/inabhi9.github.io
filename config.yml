@@ -95,7 +95,7 @@ params:
     author_title: Code, Travel, Repeat
     author_description:
     location: India
-    follow: /blog
+    follow: /
     # Social Links
     social:
       links:
