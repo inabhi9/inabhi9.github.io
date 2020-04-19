@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>Archives - Abhinav&#39;s Blog</title>
+    <title>MSSQL RDS Backup to S3 - Abhinav&#39;s Blog</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -51,22 +51,72 @@
         
     </div>
         <div id="content" class="content">
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>Archives</h1>
+
+<main role="main">
+    <article role="article" class="post type-post format-standard hentry">
+        <header class="post-header">
+            <h1>MSSQL RDS Backup to S3</h1>
+            <div class="post-details">
+                <a rel="bookmark">
+                    <time datetime="2020-02-01T21:248:186">2020-02-01</time>
+                </a>
+				
+<span style="float: right;">
+    <div id="fb-root" style="height: 100%;"></div>
     
-  </header>
-  <div class="homepage-content">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
+    <div class="fb-share-button" data-href="https://abhi9.in/blog/mssql-rds-backup-to-s3/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabhi9.in%2fblog%2fmssql-rds-backup-to-s3%2f" class="fb-xfbml-parse-ignore">Share</a>
+    </div>
+    &nbsp;
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="MSSQL RDS Backup to S3" data-url="https://abhi9.in/blog/mssql-rds-backup-to-s3/" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    &nbsp;
     
-  </div>
-  <div>
-    
-    
-  </div>
+</span>
+
+            </div>
+        </header>
+
+        <div class="post-content">
+            <ul>
+<li>Create an <a href="https://console.aws.amazon.com/rds/home?region=us-east-1#option-groups:">Option groups</a> with <code>SQLSERVER_BACKUP_RESTORE</code> option</li>
+</ul>
+<p><img src="https://abhi9.in/blog/j-resources/f3bd45eee0f6448ebd966f4d2b743014" alt="9eb1549cb7181dcdb0a6f97b3740c513.png"></p>
+<ul>
+<li>Assign the group to RDS instance</li>
+</ul>
+<p><img src="https://abhi9.in/blog/j-resources/f4c4927f6723480aa3e7fd90435240b7" alt="f14f1d1626b653cc1a5a8d085d9b198d.png"></p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.</strong></li>
+</ul>
+<p>Switch recovery mode to simple before triggering the backup</p>
+<pre><code>alter database TestimonialTree set recovery simple
+</code></pre><p>After successful backup, switch back recovery to full</p>
+<pre><code>alter database TestimonialTree set recovery full
+</code></pre><p>Ref: <a href="https://aws.amazon.com/premiumsupport/knowledge-center/native-backup-rds-sql-server/">Perform Native Backups of SQL Server DB Instances</a></p>
+
+        </div>
 
 
 
+        <footer class="post-footer">
+                
+                
+                
+        
+                
+                
+                
+                <span class="post-tags">
+                        <a href="https://abhi9.in/blog/tags/aws/">aws</a>&emsp;
+                        
+                </span>
+                
+        </footer>
+        
 <table cellspacing="15" style="width:100%; border: none;">
     <tr>
         <td style="text-align: center; border: none; padding: 0px;">
@@ -75,6 +125,28 @@
         </td>
     </tr>
 </table>
+
+        
+	
+	
+
+    </article>
+
+    
+    <nav class="navigation post-navigation" role="navigation">
+        <div class="nav-links">
+            <div class="nav-previous">
+                
+            </div>
+            <div class="nav-next">
+                
+            </div>
+        </div>
+    </nav>
+    <section>
+        
+    </section>
+    
 
 </main>
 

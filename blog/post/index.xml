@@ -6,18 +6,20 @@
     <description>Recent content in Posts on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2020 21:35:35 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 14:48:18 +0000</lastBuildDate>
     
 	<atom:link href="https://abhi9.in/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello World</title>
-      <link>https://abhi9.in/blog/hello-world/</link>
-      <pubDate>Sun, 12 Apr 2020 21:35:35 +0530</pubDate>
+      <title>MSSQL RDS Backup to S3</title>
+      <link>https://abhi9.in/blog/mssql-rds-backup-to-s3/</link>
+      <pubDate>Sat, 01 Feb 2020 14:48:18 +0000</pubDate>
       
-      <guid>https://abhi9.in/blog/hello-world/</guid>
-      <description>hello</description>
+      <guid>https://abhi9.in/blog/mssql-rds-backup-to-s3/</guid>
+      <description>Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &amp;lsquo;ACTIVE_BACKUP_OR_RESTORE&amp;rsquo;.  Switch recovery mode to simple before triggering the backup
+alter database TestimonialTree set recovery simple After successful backup, switch back recovery to full
+alter database TestimonialTree set recovery full Ref: Perform Native Backups of SQL Server DB Instances</description>
     </item>
     
   </channel>

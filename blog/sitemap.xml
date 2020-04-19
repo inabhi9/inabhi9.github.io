@@ -4,17 +4,27 @@
   
   <url>
     <loc>https://abhi9.in/blog/</loc>
-    <lastmod>2020-04-12T21:35:35+05:30</lastmod>
+    <lastmod>2020-02-01T14:48:18+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://abhi9.in/blog/hello-world/</loc>
-    <lastmod>2020-04-12T21:35:35+05:30</lastmod>
+    <loc>https://abhi9.in/blog/tags/aws/</loc>
+    <lastmod>2020-02-01T14:48:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/mssql-rds-backup-to-s3/</loc>
+    <lastmod>2020-02-01T14:48:18+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://abhi9.in/blog/post/</loc>
-    <lastmod>2020-04-12T21:35:35+05:30</lastmod>
+    <lastmod>2020-02-01T14:48:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/tags/</loc>
+    <lastmod>2020-02-01T14:48:18+00:00</lastmod>
   </url>
   
   <url>
@@ -22,15 +32,7 @@
   </url>
   
   <url>
-    <loc>https://abhi9.in/blog/categories/</loc>
-  </url>
-  
-  <url>
     <loc>https://abhi9.in/blog/tags/index/</loc>
-  </url>
-  
-  <url>
-    <loc>https://abhi9.in/blog/tags/</loc>
   </url>
   
 </urlset>
