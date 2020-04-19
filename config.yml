@@ -1,6 +1,8 @@
 baseURL: https://abhi9.in/blog
 theme: pure
 title: Abhinav's Blog
+canonifyURLs: true
+
 defaultContentLanguage: en  # en/zh/...
 footnoteReturnLinkContents: ↩
 hasCJKLanguage: true
