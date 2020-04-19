@@ -5,10 +5,20 @@
     <link>https://abhi9.in/blog/post/</link>
     <description>Recent content in Posts on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 01 Feb 2020 14:48:18 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 04:16:54 +0000</lastBuildDate>
     
         <atom:link href="https://abhi9.in/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NVM on Windows 10</title>
+      <link>https://abhi9.in/blog/post/199ba787aaf24b0f9aeb25e9d51afc37/</link>
+      <pubDate>Sat, 22 Feb 2020 04:16:54 +0000</pubDate>
+      
+      <guid>https://abhi9.in/blog/post/199ba787aaf24b0f9aeb25e9d51afc37/</guid>
+      <description>It very simple to run nodejs on Windows 10.
+ Get NVM-Windows from https://github.com/coreybutler/nvm-windows Open powershell and install node  nvm install 10 Close Powershell and open it agin. Run this to activate node version.  nvm use 10   Switching to node 10 Close Powershell.    Run Node App as Service on Windows  Download latest version from https://nssm.cc/download Extract the zip file To install a new service, open the Powershell  Run: cd /path/to/extracted/nssm.</description>
+    </item>
     
     <item>
       <title>MSSQL RDS Backup to S3</title>
