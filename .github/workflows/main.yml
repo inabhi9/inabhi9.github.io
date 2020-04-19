@@ -17,6 +17,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Set up Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.7'
+
+      # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
@@ -34,7 +43,7 @@ jobs:
         run: |
           pip3 install setuptools
           cd blog
-          pip3 install -r requirements.txt
+          pip install -r requirements.txt
 
       - name: Pull blog content
         env:
@@ -44,7 +53,7 @@ jobs:
           cd $GITHUB_WORKSPACE/blog/content/post
           find . -type f -not -name '_index.md' -delete
           rm -fr $GITHUB_WORKSPACE/blog/static/j-resources
-          python3 $GITHUB_WORKSPACE/blog/joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/post
+          python $GITHUB_WORKSPACE/blog/joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/post
           mv /tmp/posts/.resource $GITHUB_WORKSPACE/blog/static/j-resources
 
           
