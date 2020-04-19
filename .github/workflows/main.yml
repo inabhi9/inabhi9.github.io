@@ -83,7 +83,9 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          cd $GITHUB_WORKSPACE/www/public && git add --all && git commit -m "Publishing to master"
+          cd $GITHUB_WORKSPACE/www/public
+          git add --all
+          git diff-index --quiet HEAD || git commit -m "Publishing to master"
           
       - name: action-push
         uses: ad-m/github-push-action@master
