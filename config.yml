@@ -99,10 +99,10 @@ params:
     # Social Links
     social:
       links:
-        github: https://github.com/in.abhi9
+        github: https://github.com/inabhi9
         # weibo: http://weibo.com/{yourid}
-        # twitter: https://twitter.com/
-        # facebook: /
+        twitter: https://twitter.com/inabhi9
+        facebook: https://facebook.com/inabhi9
         rss: /index.xml
       link_tooltip: false # enable the social link tooltip, options: true, false
   # Site
