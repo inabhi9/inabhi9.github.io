@@ -31,7 +31,7 @@ class JoplinParser:
     # Only notes with this tag would be converted to Hugo format
     BLOG_TAG = 'blog'
 
-    __IMAGE_REGEX = r'^\!\[.*\]\((:\/.*\))'
+    __IMAGE_REGEX = r'(\!\[.*\]\(:\/.*\))'
 
     def __init__(self, dirpath, outputdir):
         self._dir = dirpath
