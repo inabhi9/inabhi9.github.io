@@ -27,7 +27,7 @@ Swith to Joplin I was using Boostnote as note taking app but it lacks mobile app
       
       <guid>https://abhi9.in/blog/2020/02/nvm-on-windows-10/</guid>
       <description>It very simple to run nodejs on Windows 10.
- Get NVM-Windows from https://github.com/coreybutler/nvm-windows Open powershell and install node  nvm install 10 Close Powershell and open it agin. Run this to activate node version.  nvm use 10   Switching to node 10 Close Powershell.    Run Node App as Service on Windows  Download latest version from https://nssm.cc/download Extract the zip file To install a new service, open the Powershell  Run: cd /path/to/extracted/nssm.</description>
+ Get NVM-Windows from https://github.com/coreybutler/nvm-windows Open powershell and install node  nvm install 10 Close Powershell and open it agin. Run this to activate node version.  nvm use 10   Close Powershell.    Run Node App as Service on Windows  Download latest version from https://nssm.cc/download Extract the zip file To install a new service, open the Powershell  Run: cd /path/to/extracted/nssm.</description>
     </item>
     
     <item>
