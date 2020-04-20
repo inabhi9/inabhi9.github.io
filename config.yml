@@ -11,7 +11,7 @@ enableEmoji: true
 PygmentsCodeFences: false
 googleAnalytics: UA-163452020-1      # UA-XXXXXXXX-X
 permalinks:
-  posts: /:year/:month/:filename/
+  posts: /:year/:month/:title/
 
 taxonomies:
     # category : categories
