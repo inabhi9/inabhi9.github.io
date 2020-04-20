@@ -52,13 +52,11 @@ jobs:
           GD_SERVICE_ACC_INFO: ${{ secrets.GD_SERVICE_ACC_INFO }}
           GD_FOLDER_ID: ${{ secrets.GD_FOLDER_ID }}
         run: |
-          cd $GITHUB_WORKSPACE/blog/content/post
+          cd $GITHUB_WORKSPACE/blog/content/posts
           find . -type f -not -name '_index.md' -delete
           rm -fr $GITHUB_WORKSPACE/blog/static/j-resources
-          python $GITHUB_WORKSPACE/blog/joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/post
-          ls $GITHUB_WORKSPACE/blog/content/post
+          python $GITHUB_WORKSPACE/blog/joplin_to_hugo.py /tmp/posts $GITHUB_WORKSPACE/blog/content/posts
           mv /tmp/posts/.resource $GITHUB_WORKSPACE/blog/static/j-resources
-          ls $GITHUB_WORKSPACE/blog/static
 
       - name: Build blog
         run: |
