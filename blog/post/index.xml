@@ -5,10 +5,20 @@
     <link>https://abhi9.in/blog/post/</link>
     <description>Recent content in Posts on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 22 Feb 2020 04:16:54 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 04:48:13 +0000</lastBuildDate>
     
         <atom:link href="https://abhi9.in/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog = Joplin &#43; Hugo &#43; Github</title>
+      <link>https://abhi9.in/blog/post/e0194fdd4ed048b0aa8c01ac0fe7073c/</link>
+      <pubDate>Sun, 19 Apr 2020 04:48:13 +0000</pubDate>
+      
+      <guid>https://abhi9.in/blog/post/e0194fdd4ed048b0aa8c01ac0fe7073c/</guid>
+      <description>It&amp;rsquo;s been quite a while since I was thinking about writing a blog. The only thing that kept me away from writing is set of tools which are easy, quick and more imporantly can fuse with my day-to-day note taking process.
+Swith to Joplin I was using Boostnote as note taking app but it lacks mobile app, web-clipper and sychronization features; moreover it became very buggy lately. Then I switched to Jopline and it has all the feature as note taking app I was looking for.</description>
+    </item>
     
     <item>
       <title>NVM on Windows 10</title>

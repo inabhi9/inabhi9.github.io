@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        MSSQL RDS Backup to S3 - Abhinav&#39;s Blog
+        Blog = Joplin &#43; Hugo &#43; Github - Abhinav&#39;s Blog
       </title>
     <head>
   <meta charset="utf-8">
@@ -23,40 +23,36 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <meta name="description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &amp;lsquo;ACTIVE_BACKUP_OR_RESTORE&amp;rsquo;.  Switch recovery mode to simple before triggering the backup
-alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
-alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances" />
+  <meta name="description" content="It&amp;rsquo;s been quite a while since I was thinking about writing a blog. The only thing that kept me away from writing is set of tools which are easy, quick and more imporantly can fuse with my day-to-day note taking process.
+Swith to Joplin I was using Boostnote as note taking app but it lacks mobile app, web-clipper and sychronization features; moreover it became very buggy lately. Then I switched to Jopline and it has all the feature as note taking app I was looking for." />
   <meta name="generator" content="Hugo 0.68.3 with theme pure" />
-  <title>MSSQL RDS Backup to S3 - Abhinav&#39;s Blog</title>
+  <title>Blog = Joplin &#43; Hugo &#43; Github - Abhinav&#39;s Blog</title>
   
   
   <link rel="stylesheet" href="https://abhi9.in/blog/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="MSSQL RDS Backup to S3" />
-<meta property="og:description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
-alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
-alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances" />
+  <meta property="og:title" content="Blog = Joplin &#43; Hugo &#43; Github" />
+<meta property="og:description" content="It&rsquo;s been quite a while since I was thinking about writing a blog. The only thing that kept me away from writing is set of tools which are easy, quick and more imporantly can fuse with my day-to-day note taking process.
+Swith to Joplin I was using Boostnote as note taking app but it lacks mobile app, web-clipper and sychronization features; moreover it became very buggy lately. Then I switched to Jopline and it has all the feature as note taking app I was looking for." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/" />
-<meta property="article:published_time" content="2020-02-01T14:48:18+00:00" />
-<meta property="article:modified_time" content="2020-02-01T14:48:18+00:00" />
-<meta itemprop="name" content="MSSQL RDS Backup to S3">
-<meta itemprop="description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
-alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
-alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances">
-<meta itemprop="datePublished" content="2020-02-01T14:48:18&#43;00:00" />
-<meta itemprop="dateModified" content="2020-02-01T14:48:18&#43;00:00" />
-<meta itemprop="wordCount" content="62">
+<meta property="og:url" content="https://abhi9.in/blog/post/e0194fdd4ed048b0aa8c01ac0fe7073c/" />
+<meta property="article:published_time" content="2020-04-19T04:48:13+00:00" />
+<meta property="article:modified_time" content="2020-04-19T04:48:13+00:00" />
+<meta itemprop="name" content="Blog = Joplin &#43; Hugo &#43; Github">
+<meta itemprop="description" content="It&rsquo;s been quite a while since I was thinking about writing a blog. The only thing that kept me away from writing is set of tools which are easy, quick and more imporantly can fuse with my day-to-day note taking process.
+Swith to Joplin I was using Boostnote as note taking app but it lacks mobile app, web-clipper and sychronization features; moreover it became very buggy lately. Then I switched to Jopline and it has all the feature as note taking app I was looking for.">
+<meta itemprop="datePublished" content="2020-04-19T04:48:13&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-19T04:48:13&#43;00:00" />
+<meta itemprop="wordCount" content="440">
 
 
 
-<meta itemprop="keywords" content="aws," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="MSSQL RDS Backup to S3"/>
-<meta name="twitter:description" content="Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
-alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
-alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances"/>
+<meta itemprop="keywords" content="how-to," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blog = Joplin &#43; Hugo &#43; Github"/>
+<meta name="twitter:description" content="It&rsquo;s been quite a while since I was thinking about writing a blog. The only thing that kept me away from writing is set of tools which are easy, quick and more imporantly can fuse with my day-to-day note taking process.
+Swith to Joplin I was using Boostnote as note taking app but it lacks mobile app, web-clipper and sychronization features; moreover it became very buggy lately. Then I switched to Jopline and it has all the feature as note taking app I was looking for."/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -241,8 +237,8 @@ alter database TestimonialTree set recovery full  Ref: Perform Native Backups of
       <h1 itemprop="name">
   <a
     class="article-title"
-    href="https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/"
-    >MSSQL RDS Backup to S3</a
+    href="https://abhi9.in/blog/post/e0194fdd4ed048b0aa8c01ac0fe7073c/"
+    >Blog = Joplin &#43; Hugo &#43; Github</a
   >
 </h1>
 
@@ -250,42 +246,97 @@ alter database TestimonialTree set recovery full  Ref: Perform Native Backups of
         
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/" class="article-date">
-  <time datetime="2020-02-01 14:48:18.871 &#43;0000 UTC" itemprop="datePublished">2020-02-01</time>
+<a href="https://abhi9.in/blog/post/e0194fdd4ed048b0aa8c01ac0fe7073c/" class="article-date">
+  <time datetime="2020-04-19 04:48:13.555 &#43;0000 UTC" itemprop="datePublished">2020-04-19</time>
 </a>
 </span>
   
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="https://abhi9.in/blog/tags/aws/"> aws </a>
+    <a class="article-tag-link" href="https://abhi9.in/blog/tags/how-to/"> how-to </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="https://abhi9.in/blog/post/de334129d2114a65ad3c636a71cfdb31/#comments"
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="https://abhi9.in/blog/post/e0194fdd4ed048b0aa8c01ac0fe7073c/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 62words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 440words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <ul>
-<li>Create an <a href="https://console.aws.amazon.com/rds/home?region=us-east-1#option-groups:">Option groups</a> with <code>SQLSERVER_BACKUP_RESTORE</code> option</li>
-</ul>
-<p><img src="https://abhi9.in/blog/j-resources/f3bd45eee0f6448ebd966f4d2b743014" alt="9eb1549cb7181dcdb0a6f97b3740c513.png"></p>
+      <p>It&rsquo;s been quite a while since I was thinking about writing a blog. The only thing that kept me away from writing is set of tools which are easy, quick and more imporantly can fuse with my day-to-day note taking process.</p>
+<h2 id="swith-to-joplin">Swith to Joplin</h2>
+<p>I was using Boostnote as note taking app but it lacks mobile app, web-clipper and sychronization features; moreover it became very buggy lately. Then I switched to <a href="https://joplinapp.org/">Jopline</a> and it has all the feature as note taking app I was looking for.</p>
+<p>Switching from Boostnote to Joplin is very straight forward.</p>
 <ul>
-<li>Assign the group to RDS instance</li>
+<li>Export notes from Boostnote as markdown.</li>
+<li>Import them in Joplin.</li>
+<li>Fix images and tags by manually copying them.</li>
 </ul>
-<p><img src="https://abhi9.in/blog/j-resources/f4c4927f6723480aa3e7fd90435240b7" alt="f14f1d1626b653cc1a5a8d085d9b198d.png"></p>
-<h2 id="troubleshooting">Troubleshooting</h2>
+<p>I don&rsquo;t know if there&rsquo;s any automated way but I could do that since I had just started taking notes and didn&rsquo;t have many of them.</p>
+<h2 id="hugo-joplin-to-a-blog">Hugo: Joplin to A Blog</h2>
+<p>Hugo is a static site generator and moderately simple. So the idea is to convert Joplin files to Hugo markdown format and publish them automatically to GitHub Pages.</p>
+<h3 id="requirements">Requirements</h3>
 <ul>
-<li><strong>The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.</strong></li>
+<li>Github account</li>
+<li>Google Drive</li>
+<li><a href="https://www.insynchq.com">Insync</a> (this is optional. You can choose any to sync Joplin directory to Google Drive.)</li>
 </ul>
-<p>Switch recovery mode to simple before triggering the backup</p>
-<pre><code>alter database TestimonialTree set recovery simple
-</code></pre>
-<p>After successful backup, switch back recovery to full</p>
-<pre><code>alter database TestimonialTree set recovery full
-</code></pre>
-<p>Ref: <a href="https://aws.amazon.com/premiumsupport/knowledge-center/native-backup-rds-sql-server/">Perform Native Backups of SQL Server DB Instances</a></p>
+<h3 id="steps">Steps</h3>
+<ul>
+<li>
+<p>Make Joplin notes available publically.</p>
+<ul>
+<li>Sync Joplin to local directory.</li>
+<li>Directory is synced to Google Drive via Insync.</li>
+<li>Share the Google Drive directory as <strong>Anyone with Link</strong> option.</li>
+</ul>
+</li>
+<li>
+<p>Get Google service account credential.</p>
+<ul>
+<li>Create a new project if you don&rsquo;t have any at <a href="https://console.developers.google.com/">Developer Console</a></li>
+<li>Enable Google Drive API.</li>
+</ul>
+<p><img src=":/81942a573d724f56ae5e8973c7abaacb" alt="2f7546ec74aaf8e083682e4b43923b05.png"></p>
+<ul>
+<li>Create a service account, furnish a new private key and download it in JSON format.</li>
+</ul>
+<p><img src=":/a0fd06b5ab704d6f8c7e5009255ed682" alt="4311b793c59ef1c3f8346afa4344647a.png"></p>
+</li>
+<li>
+<p>Prepare a GitHub Page respository.</p>
+<ul>
+<li>Create a GitHub Page respository.</li>
+<li>Create three branches: <code>www</code> and <code>master</code>
+<ul>
+<li>Make <code>www</code> as default branch.</li>
+<li><code>www</code> branch is where (<em><a href="http://mysite.com">http://mysite.com</a></em>) Hugo source and <a href="https://github.com/inabhi9/inabhi9.github.io/blob/blog/joplin_to_hugo.py">Joplin to Hugo converter script</a> will live.</li>
+<li><code>master</code> branch is where actual static site will live. GitHub doesn&rsquo;t allow any other branch to publish content in personal account.</li>
+</ul>
+</li>
+<li>Add following attribute to repository&rsquo;s secret.
+<ul>
+<li><code>GD_FOLDER_ID</code>: &lt;shared Joplin&rsquo;s Goole Drive folder id&gt;</li>
+<li><code>GD_SERVICE_ACC_INFO</code>: Service account&rsquo;s json file content.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Enable GitHub Action and edit workflow to do the followings.</p>
+<ul>
+<li>Enable action on <a href="https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestbranchestags">push</a> and <a href="https://help.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events-schedule">schedule</a>.</li>
+<li>Check out <code>www</code> branches with their submodule to <code>www</code> directory.</li>
+<li>Change python version to 3.7</li>
+<li>Run converter script that pull drive content to temporary location and output content to <code>www/post</code></li>
+<li>Check out <code>master</code> branch to <code>www/public</code> directory.</li>
+<li>Build www with Hugo.</li>
+<li>Commit and push <code>www/public</code> (this is a master branch).</li>
+</ul>
+</li>
+</ul>
+<p>Here is the <a href="https://github.com/inabhi9/inabhi9.github.io">GitHub Repository</a> of my setup for your reference. I host to separate static site: <a href="https://abhi9.in">https://abhi9.in</a> for my website and <a href="https://abhi9.in/blog">https://abhi9.in/blog</a> for my blog.</p>
+<p>This enables me to write from any device and publish a blog post from anywhere.</p>
 
     </div>
     <div class="article-footer">
@@ -300,10 +351,10 @@ alter database TestimonialTree set recovery full  Ref: Perform Native Backups of
 </div><nav class="bar bar-footer clearfix" data-stick-bottom>
     <div class="bar-inner">
         <ul class="pager pull-left">
-            <li class="next">
-                <a href="https://abhi9.in/blog/post/199ba787aaf24b0f9aeb25e9d51afc37/"
-                    title="NVM on Windows 10"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            <li class="prev">
+                <a href="https://abhi9.in/blog/post/199ba787aaf24b0f9aeb25e9d51afc37/" title="NVM on Windows 10"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
             </li>
             
             <li class="toggle-toc">
@@ -404,7 +455,7 @@ alter database TestimonialTree set recovery full  Ref: Perform Native Backups of
 
 <script>
     var disqus_config = function () {
-        this.page.url = 'https:\/\/abhi9.in\/blog\/post\/de334129d2114a65ad3c636a71cfdb31\/';
+        this.page.url = 'https:\/\/abhi9.in\/blog\/post\/e0194fdd4ed048b0aa8c01ac0fe7073c\/';
         this.page.identifier = 'inabhi9';
     };
     (function () {

@@ -4,7 +4,35 @@
   
   <url>
     <loc>https://abhi9.in/blog/</loc>
-    <lastmod>2020-02-22T04:16:54+00:00</lastmod>
+    <lastmod>2020-04-19T04:48:13+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/post/e0194fdd4ed048b0aa8c01ac0fe7073c/</loc>
+    <lastmod>2020-04-19T04:48:13+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/tags/how-to/</loc>
+    <lastmod>2020-04-19T04:48:13+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/post/</loc>
+    <lastmod>2020-04-19T04:48:13+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/tags/</loc>
+    <lastmod>2020-04-19T04:48:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -18,20 +46,6 @@
   
   <url>
     <loc>https://abhi9.in/blog/post/199ba787aaf24b0f9aeb25e9d51afc37/</loc>
-    <lastmod>2020-02-22T04:16:54+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://abhi9.in/blog/post/</loc>
-    <lastmod>2020-02-22T04:16:54+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://abhi9.in/blog/tags/</loc>
     <lastmod>2020-02-22T04:16:54+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
