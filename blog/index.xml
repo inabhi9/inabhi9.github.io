@@ -5,10 +5,23 @@
     <link>https://abhi9.in/blog/</link>
     <description>Recent content on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Apr 2020 04:48:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 15:08:09 +0000</lastBuildDate>
     
         <atom:link href="https://abhi9.in/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How To Create Angular Library</title>
+      <link>https://abhi9.in/blog/2020/04/how-to-create-angular-library/</link>
+      <pubDate>Fri, 24 Apr 2020 15:08:09 +0000</pubDate>
+      
+      <guid>https://abhi9.in/blog/2020/04/how-to-create-angular-library/</guid>
+      <description>Create a workspace ng new my-workspace --create-application=false  This will initialized a project without creating any app module and all.
+Create a library The following command will create a library.
+ng g library @scope/my-library  The library source will be in
+/my-workspace |-- projects |-- scope |--my-library |-- src |-- lib  You can skip the scope part if you don&amp;rsquo;t want and name your library like my-library
+Build your library Under /my-workspace directory run</description>
+    </item>
     
     <item>
       <title>Blog = Joplin &#43; Hugo &#43; Github</title>

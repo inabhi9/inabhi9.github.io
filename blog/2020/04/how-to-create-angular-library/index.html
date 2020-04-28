@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Abhinav&#39;s Blog</title>
+        How To Create Angular Library - Abhinav&#39;s Blog
+      </title>
     <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,25 +23,48 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  
+  <meta name="description" content="Create a workspace ng new my-workspace --create-application=false  This will initialized a project without creating any app module and all.
+Create a library The following command will create a library.
+ng g library @scope/my-library  The library source will be in
+/my-workspace |-- projects |-- scope |--my-library |-- src |-- lib  You can skip the scope part if you don&amp;rsquo;t want and name your library like my-library
+Build your library Under /my-workspace directory run" />
   <meta name="generator" content="Hugo 0.68.3 with theme pure" />
-  <title>Abhinav&#39;s Blog</title>
+  <title>How To Create Angular Library - Abhinav&#39;s Blog</title>
   
-  <link rel="alternate" type="application/rss+xml" href="https://abhi9.in/blog/index.xml" title="Abhinav's Blog" />
   
   <link rel="stylesheet" href="https://abhi9.in/blog/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
   
   <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-  <meta property="og:title" content="Abhinav&#39;s Blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://abhi9.in/blog/" />
-<meta property="og:updated_time" content="2020-04-24T15:08:09+00:00" />
-<meta itemprop="name" content="Abhinav&#39;s Blog">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Abhinav&#39;s Blog"/>
-<meta name="twitter:description" content=""/>
+  <meta property="og:title" content="How To Create Angular Library" />
+<meta property="og:description" content="Create a workspace ng new my-workspace --create-application=false  This will initialized a project without creating any app module and all.
+Create a library The following command will create a library.
+ng g library @scope/my-library  The library source will be in
+/my-workspace |-- projects |-- scope |--my-library |-- src |-- lib  You can skip the scope part if you don&rsquo;t want and name your library like my-library
+Build your library Under /my-workspace directory run" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://abhi9.in/blog/2020/04/how-to-create-angular-library/" />
+<meta property="article:published_time" content="2020-04-24T15:08:09+00:00" />
+<meta property="article:modified_time" content="2020-04-24T15:08:09+00:00" />
+<meta itemprop="name" content="How To Create Angular Library">
+<meta itemprop="description" content="Create a workspace ng new my-workspace --create-application=false  This will initialized a project without creating any app module and all.
+Create a library The following command will create a library.
+ng g library @scope/my-library  The library source will be in
+/my-workspace |-- projects |-- scope |--my-library |-- src |-- lib  You can skip the scope part if you don&rsquo;t want and name your library like my-library
+Build your library Under /my-workspace directory run">
+<meta itemprop="datePublished" content="2020-04-24T15:08:09&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-24T15:08:09&#43;00:00" />
+<meta itemprop="wordCount" content="234">
+
+
+
+<meta itemprop="keywords" content="programming," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How To Create Angular Library"/>
+<meta name="twitter:description" content="Create a workspace ng new my-workspace --create-application=false  This will initialized a project without creating any app module and all.
+Create a library The following command will create a library.
+ng g library @scope/my-library  The library source will be in
+/my-workspace |-- projects |-- scope |--my-library |-- src |-- lib  You can skip the scope part if you don&rsquo;t want and name your library like my-library
+Build your library Under /my-workspace directory run"/>
 
   <!--[if lte IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -225,20 +249,18 @@
 
     
     
-
-<main class="main" role="main">
-  
-  <div class="content article-list">
+<aside class="sidebar sidebar-toc" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">In this post</h4>
+    <nav id="toc" class="js-toc toc"></nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
     
-    
-    
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
+    <div class="article-header">
+      <h1 itemprop="name">
   <a
     class="article-title"
     href="https://abhi9.in/blog/2020/04/how-to-create-angular-library/"
@@ -246,18 +268,11 @@
   >
 </h1>
 
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        Create a workspace ng new my-workspace --create-application=false  This will initialized a project without creating any app module and all.
-Create a library The following command will create a library.
-ng g library @scope/my-library  The library source will be in
-/my-workspace |-- projects |-- scope |--my-library |-- src |-- lib  You can skip the scope part if you don&rsquo;t want and name your library like my-library
-Build your library Under /my-workspace directory run
-      </div>
-      <p class="article-meta">
+      <div class="article-meta">
+        
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://abhi9.in/blog/2020/04/how-to-create-angular-library/" class="">
+<a href="https://abhi9.in/blog/2020/04/how-to-create-angular-library/" class="article-date">
   <time datetime="2020-04-24 15:08:09.014 &#43;0000 UTC" itemprop="datePublished">2020-04-24</time>
 </a>
 </span>
@@ -267,133 +282,118 @@ Build your library Under /my-workspace directory run
     <a class="article-tag-link" href="https://abhi9.in/blog/tags/programming/"> programming </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="https://abhi9.in/blog/2020/04/how-to-create-angular-library/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="https://abhi9.in/blog/2020/04/how-to-create-angular-library/#comments"
+            class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 234words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="https://abhi9.in/blog/2020/04/blog-joplin-hugo-github/"
-    >Blog = Joplin &#43; Hugo &#43; Github</a
-  >
-</h1>
-
       </div>
-      <div class="article-entry text-muted" itemprop="description">
-        It&rsquo;s been quite a while since I was thinking about writing a blog. The only thing that kept me away from writing is set of tools which are easy, quick and more imporantly can fuse with my day-to-day note taking process.
-Swith to Joplin I was using Boostnote as note taking app but it lacks mobile app, web-clipper and sychronization features; moreover it became very buggy lately. Then I switched to Jopline and it has all the feature as note taking app I was looking for.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://abhi9.in/blog/2020/04/blog-joplin-hugo-github/" class="">
-  <time datetime="2020-04-19 04:48:13.555 &#43;0000 UTC" itemprop="datePublished">2020-04-19</time>
-</a>
-</span>
-  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="https://abhi9.in/blog/tags/how-to/"> how-to </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="https://abhi9.in/blog/2020/04/blog-joplin-hugo-github/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 440words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="https://abhi9.in/blog/2020/02/nvm-on-windows-10/"
-    >NVM on Windows 10</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        It very simple to run nodejs on Windows 10.
- Get NVM-Windows from https://github.com/coreybutler/nvm-windows Open powershell and install node  nvm install 10 Close Powershell and open it agin. Run this to activate node version.  nvm use 10   Close Powershell.    Run Node App as Service on Windows  Download latest version from https://nssm.cc/download Extract the zip file To install a new service, open the Powershell  Run: cd /path/to/extracted/nssm.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://abhi9.in/blog/2020/02/nvm-on-windows-10/" class="">
-  <time datetime="2020-02-22 04:16:54.18 &#43;0000 UTC" itemprop="datePublished">2020-02-22</time>
-</a>
-</span>
-  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="https://abhi9.in/blog/tags/windows/"> windows </a>
-    <a class="article-tag-link" href="https://abhi9.in/blog/tags/nodejs/"> nodejs </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="https://abhi9.in/blog/2020/02/nvm-on-windows-10/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 82words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="https://abhi9.in/blog/2020/02/mssql-rds-backup-to-s3/"
-    >MSSQL RDS Backup to S3</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        Create an Option groups with SQLSERVER_BACKUP_RESTORE option   Assign the group to RDS instance  Troubleshooting  The transaction log for database is full due to &lsquo;ACTIVE_BACKUP_OR_RESTORE&rsquo;.  Switch recovery mode to simple before triggering the backup
-alter database TestimonialTree set recovery simple  After successful backup, switch back recovery to full
-alter database TestimonialTree set recovery full  Ref: Perform Native Backups of SQL Server DB Instances
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://abhi9.in/blog/2020/02/mssql-rds-backup-to-s3/" class="">
-  <time datetime="2020-02-01 14:48:18.871 &#43;0000 UTC" itemprop="datePublished">2020-02-01</time>
-</a>
-</span>
-  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="https://abhi9.in/blog/tags/aws/"> aws </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="https://abhi9.in/blog/2020/02/mssql-rds-backup-to-s3/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 62words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
-      </p>
-    </article></div>
-  
-<nav class="bar bar-footer clearfix" data-stick-bottom>
-  <div class="bar-inner">
-    <ul class="pager pull-left">
-    </ul>
-    <div class="total-article bar-right">
-      Page:1/1
     </div>
-  </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h3 id="create-a-workspace">Create a workspace</h3>
+<pre><code class="language-sh">ng new my-workspace --create-application=false
+</code></pre>
+<p>This will initialized a project without creating any app module and all.</p>
+<h3 id="create-a-library">Create a library</h3>
+<p>The following command will create a library.</p>
+<pre><code class="language-sh">ng g library @scope/my-library
+</code></pre>
+<p>The library source will be in</p>
+<pre><code>/my-workspace
+	|-- projects
+		|-- scope
+			|--my-library
+				|-- src
+					|-- lib
+</code></pre>
+<p>You can skip the scope part if you don&rsquo;t want and name your library like <code>my-library</code></p>
+<h3 id="build-your-library">Build your library</h3>
+<p>Under <code>/my-workspace</code> directory run</p>
+<pre><code class="language-bash">npx ng build
+</code></pre>
+<p>This command will build all the projects in the workspace.</p>
+<blockquote>
+<p>Note: You can specify a project using <code>--project</code> flag.</p>
+</blockquote>
+<p>Output will be generated under <code>/my-workspace/dist/scope/my-library</code> directory.</p>
+<h3 id="publish-your-library-on-npm">Publish your library on NPM</h3>
+<p>You&rsquo;ll need an account on <!-- raw HTML omitted -->npmjs.com<!-- raw HTML omitted -->. So get registered if you don&rsquo;t have already.</p>
+<ul>
+<li>
+<p>Login to your account using the following command.</p>
+<pre><code>npm login
+</code></pre>
+<pre><code> This will prompt for your credential.
+
+</code></pre>
+</li>
+<li>
+<p>Goto your library&rsquo;s <code>dist</code> directory. Eg <code>/my-workspace/dist/scope/my-library</code></p>
+</li>
+<li>
+<p>Run</p>
+<pre><code class="language-bash">npm publish --access public
+</code></pre>
+<pre><code> &gt; Note: By default, npm publishes with **private access**. If you don't have the paid account which allows prive packages then it would fail.
+
+</code></pre>
+</li>
+</ul>
+<h3 id="use-locally">Use Locally</h3>
+<ul>
+<li>
+<p>Build the library and goto <code>/dist/my-library</code></p>
+</li>
+<li>
+<p>Create a symlink package using npm</p>
+<pre><code class="language-bash">npm link
+</code></pre>
+<pre><code>
+</code></pre>
+</li>
+<li>
+<p>Go to your project where you want to use the library and install it using</p>
+<pre><code class="language-bash">npm link my-library
+</code></pre>
+<pre><code>
+</code></pre>
+</li>
+</ul>
+<p>It may happen that <em>NgModule</em> of your library may not work correctly with your angular project. To fix it add <code>&quot;preserveSymlinks&quot;: true</code> to your project&rsquo;s angular.json under <code>projects.yourProject.architect.build.options</code></p>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://abhi9.in/blog/2020/04/blog-joplin-hugo-github/" title="Blog = Joplin &#43; Hugo &#43; Github"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="facebook,twitter,linkedin"
+                data-mobile-sites="facebook,twitter,linkedin"></div>
+        </div>
+    </div>
 </nav>
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -473,6 +473,19 @@ alter database TestimonialTree set recovery full  Ref: Perform Native Backups of
         
         hasInnerContainers: true,
     });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/abhi9.in\/blog\/2020\/04\/how-to-create-angular-library\/';
+        this.page.identifier = 'inabhi9';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'inabhi9' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 
 <script type="application/javascript">
