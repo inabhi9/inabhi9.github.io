@@ -4,20 +4,41 @@
   
   <url>
     <loc>https://abhi9.in/blog/</loc>
-    <lastmod>2020-04-24T15:08:09+00:00</lastmod>
+    <lastmod>2020-07-07T03:31:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://abhi9.in/blog/2020/04/how-to-create-angular-library/</loc>
-    <lastmod>2020-04-24T15:08:09+00:00</lastmod>
+    <loc>https://abhi9.in/blog/tags/how-to/</loc>
+    <lastmod>2020-07-07T03:31:09+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/2020/07/huawei-e5573cs-609/</loc>
+    <lastmod>2020-07-07T03:31:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://abhi9.in/blog/posts/</loc>
+    <lastmod>2020-07-07T03:31:09+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/tags/</loc>
+    <lastmod>2020-07-07T03:31:09+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://abhi9.in/blog/2020/04/how-to-create-angular-library/</loc>
     <lastmod>2020-04-24T15:08:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -31,21 +52,7 @@
   </url>
   
   <url>
-    <loc>https://abhi9.in/blog/tags/</loc>
-    <lastmod>2020-04-24T15:08:09+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://abhi9.in/blog/2020/04/blog-joplin-hugo-github/</loc>
-    <lastmod>2020-04-19T04:48:13+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://abhi9.in/blog/tags/how-to/</loc>
     <lastmod>2020-04-19T04:48:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

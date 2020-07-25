@@ -5,10 +5,24 @@
     <link>https://abhi9.in/blog/tags/</link>
     <description>Recent content in Tags on Abhinav&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 15:08:09 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2020 03:31:09 +0000</lastBuildDate>
     
         <atom:link href="https://abhi9.in/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Huawei E5573Cs-609</title>
+      <link>https://abhi9.in/blog/2020/07/huawei-e5573cs-609/</link>
+      <pubDate>Tue, 07 Jul 2020 03:31:09 +0000</pubDate>
+      
+      <guid>https://abhi9.in/blog/2020/07/huawei-e5573cs-609/</guid>
+      <description>Huawei E5573Cs-609 Setup Install
+ Huawei drivers.zip dc-unlocker2client_1.00.1431.zip  Writing IMEI: In DC unlocker, after detecting the device, write following command
+AT^CIMEI=&amp;quot;Replace with your IMEI number&amp;quot;  Writing Serial no: AT^SN=&amp;quot;16digit serial number&amp;quot;  To use without battery: AT^NVWREX=50364,0,4,01 00 00 00   Note: It may erase IMEI and serial number. So it needs to be rewrite.
+ To undo this:
+AT^NVWREX=50364,0,4,00 00 00 00  Ref:
+ https://forum.hovatek.com/thread-32528.html  </description>
+    </item>
     
     <item>
       <title>How To Create Angular Library</title>
